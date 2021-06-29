@@ -3,6 +3,7 @@ import logoImg from "../assets/images/logo.svg";
 import googleIconImg from "../assets/images/google-icon.svg";
 
 import "../styles/auth.scss";
+import { Button } from "../Components/Button";
 
 export function Home() {
 
@@ -17,7 +18,7 @@ export function Home() {
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Letmeak" />
-          <button>
+          <button className="create-room">
             <img src={googleIconImg} alt="Logo do google" />
             Crie sua sala com o Google
           </button>
@@ -27,9 +28,9 @@ export function Home() {
               type="text"
               placeholder="Digite o codigo da aula"
             />
-            <button type="submit">
+            <Button type="submit">
               Entrar na sala
-            </button>
+            </Button>
           </form>
         </div>
       </main>
